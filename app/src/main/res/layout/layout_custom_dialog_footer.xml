@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <!-- HP -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#705398d9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#14325c"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="HP"
+            android:textColor="#a35a3b"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#705398d9"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                android:id="@+id/hpZzHorizontalProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                app:zpb_bg_color="#a53a3b"
+                app:zpb_max="200"
+                app:zpb_padding="0dp"
+                app:zpb_pb_color="#f4e3b1"
+                app:zpb_progress="35"/>
+
+            <TextView
+                android:id="@+id/hpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:shadowColor="#14325c"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="35"
+                android:textColor="#5398d9"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 攻擊 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#705398d9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#14325c"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="攻擊"
+            android:textColor="#a35a3b"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#705398d9"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                android:id="@+id/attackZzHorizontalProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                app:zpb_bg_color="#a53a3b"
+                app:zpb_max="200"
+                app:zpb_padding="0dp"
+                app:zpb_pb_color="#f4e3b1"
+                app:zpb_progress="35"/>
+
+            <TextView
+                android:id="@+id/attackTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:shadowColor="#14325c"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="35"
+                android:textColor="#5398d9"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 防禦 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#705398d9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#14325c"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="防禦"
+            android:textColor="#a35a3b"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#705398d9"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                android:id="@+id/defenseZzHorizontalProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                app:zpb_bg_color="#a53a3b"
+                app:zpb_max="200"
+                app:zpb_padding="0dp"
+                app:zpb_pb_color="#f4e3b1"
+                app:zpb_progress="35"/>
+
+            <TextView
+                android:id="@+id/defenseTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:shadowColor="#14325c"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="35"
+                android:textColor="#5398d9"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 速度 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#705398d9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#14325c"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="速度"
+            android:textColor="#a35a3b"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#705398d9"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <me.zhouzhuo.zzhorizontalprogressbar.ZzHorizontalProgressBar
+                android:id="@+id/speedZzHorizontalProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                app:zpb_bg_color="#a53a3b"
+                app:zpb_max="200"
+                app:zpb_padding="0dp"
+                app:zpb_pb_color="#f4e3b1"
+                app:zpb_progress="35"/>
+
+            <TextView
+                android:id="@+id/speedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:shadowColor="#14325c"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="35"
+                android:textColor="#5398d9"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 按鈕 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5398d9"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/cancelLinearLayout"
+                android:layout_width="60dp"
+                android:layout_height="34dp"
+                android:background="@drawable/layout_style"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:shadowColor="#14325c"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    android:text="取消"
+                    android:textColor="#f4e3b1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/enterLinearLayout"
+                android:layout_width="60dp"
+                android:layout_height="34dp"
+                android:background="@drawable/layout_style"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:shadowColor="#14325c"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="1"
+                    android:text="確定"
+                    android:textColor="#f4e3b1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
